@@ -15,7 +15,9 @@
 </template>
 
 <script>
-import Quote from "../quote";
+"use strict";
+
+import Quote from "../js/quote";
 
 export default {
     data() {

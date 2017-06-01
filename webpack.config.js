@@ -47,13 +47,6 @@ module.exports = {
         options: {
           name: '/audio/[name].[ext]'
         }
-      },
-      {
-        test: /\.html$/,
-        loader: 'file-loader',
-        options: {
-          name: '200.html'
-        }
       }
     ]
   },

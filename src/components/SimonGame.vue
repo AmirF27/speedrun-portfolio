@@ -45,7 +45,7 @@
 <script>
 "use strict";
 
-import Simon from "../simon";
+import Simon from "../js/simon";
 
 export default {
     data() {

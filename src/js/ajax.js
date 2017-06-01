@@ -1,3 +1,5 @@
+"use strict";
+
 export default class Ajax {
     static resolveUrl(url, params) {
         let paramsKeys = Object.keys(params);

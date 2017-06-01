@@ -20,8 +20,8 @@
 <script>
 "use strict";
 
-import Geo from "../geo";
-import Weather from "../weather";
+import Geo from "../js/geo";
+import Weather from "../js/weather";
 
 export default {
     data() {

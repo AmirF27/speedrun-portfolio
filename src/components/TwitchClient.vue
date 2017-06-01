@@ -40,7 +40,9 @@
 </template>
 
 <script>
-import StreamService from "../stream-service";
+"use strict";
+
+import StreamService from "../js/stream-service";
 
 export default {
     data() {

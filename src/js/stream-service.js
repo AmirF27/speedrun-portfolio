@@ -1,3 +1,5 @@
+"use strict";
+
 export default class StreamService {
     static getUserData(user) {
         return new Promise(function(resolve, reject) {

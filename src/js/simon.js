@@ -10,25 +10,25 @@ export default class Simon {
             {
                 color: "green",
                 sound: new Howl({
-                    src: require("./assets/audio/simonSound1.mp3")
+                    src: require("../assets/audio/simonSound1.mp3")
                 })
             },
             {
                 color: "red",
                 sound: new Howl({
-                    src: require("./assets/audio/simonSound2.mp3")
+                    src: require("../assets/audio/simonSound2.mp3")
                 })
             },
             {
                 color: "yellow",
                 sound: new Howl({
-                    src: require("./assets/audio/simonSound3.mp3")
+                    src: require("../assets/audio/simonSound3.mp3")
                 })
             },
             {
                 color: "blue",
                 sound: new Howl({
-                    src: require("./assets/audio/simonSound4.mp3")
+                    src: require("../assets/audio/simonSound4.mp3")
                 })
             }
         ];

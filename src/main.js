@@ -1,6 +1,5 @@
 "use strict";
 
-require("../200.html");
 require("./assets/images/ajax-loader.gif");
 
 import Vue from "vue";

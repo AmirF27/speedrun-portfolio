@@ -1,3 +1,5 @@
+"use strict";
+
 import Ajax from "./ajax";
 
 const C = "C";

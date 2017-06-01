@@ -3,7 +3,6 @@
 </template>
 
 <script>
-// import Project from "./Project.vue";
 </script>
 
 <style>
