@@ -1,0 +1,73 @@
+@import "variables";
+
+.box {
+    background: $color-primary-light;
+    border-radius: 3px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    margin: 60px auto 0;
+    max-width: 100%;
+    min-height: 280px;
+    padding: $box-padding $box-padding ($box-padding * 4);
+    position: relative;
+    width: 600px;
+
+    @extend %clearfix;
+}
+
+.quote {
+    font-size: 1.1em;
+    margin-left: 50px;
+}
+
+.author {
+    color: $color-text-secondary;
+    font-style: italic;
+    margin-right: 60px;
+}
+
+.quote-icon {
+    color: $color-primary-dark;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.btn--new-quote {
+    font-size: 0.9em;
+    right: $box-padding;
+    text-transform: uppercase;
+}
+
+.btn--tweet {
+    font-size: 1.4em;
+    left: $box-padding;
+    padding-left: 0;
+    padding-right: 0;
+    width: 40px;
+}
+
+.btn--new-quote, .btn--tweet {
+    bottom: $box-padding;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+    .quote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .author {
+        margin-right: 0;
+    }
+
+    .quote-icon {
+        display: block;
+        position: static;
+    }
+}
