@@ -1,12 +1,12 @@
 "use strict";
 
-import First from "./components/First.vue";
+import Main from "./components/Main.vue";
 import Project from "./Project.vue";
 
 export default [
     {
         path: "/",
-        component: First
+        component: Main
     },
     {
         path: "/projects/:project",
