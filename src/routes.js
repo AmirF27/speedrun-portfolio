@@ -9,7 +9,7 @@ export default [
         component: Main
     },
     {
-        path: "/projects/:project",
+        path: "/:project",
         component: Project
     }
 ];

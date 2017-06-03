@@ -65,6 +65,7 @@ const projectInfo = [
         title: "Random Quote Machine",
         image: require("./assets/images/random-quote-machine.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/quote-machine",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."
@@ -73,6 +74,7 @@ const projectInfo = [
         title: "Local Weather",
         image: require("./assets/images/local-weather.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/local-weather",
         desciption: "This simple application figures out the user's current " +
             "location and displays the current weather in that location. " +
             "Users are also able to toggle the temperature scale between " +
@@ -82,6 +84,7 @@ const projectInfo = [
         title: "Wikipedia Viewer",
         image: require("./assets/images/wikipedia-viewer.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/wikipedia-viewer",
         desciption: "This app allows users to search Wikipedia for articles, " +
             "as well as view a random article."
     },
@@ -89,6 +92,7 @@ const projectInfo = [
         title: "Twitch.tv Client",
         image: require("./assets/images/twitch-client.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/twitch-client",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."
@@ -97,6 +101,7 @@ const projectInfo = [
         title: "Calculator",
         image: require("./assets/images/calculator.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/calculator",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."
@@ -105,6 +110,7 @@ const projectInfo = [
         title: "Pomodoro Clock",
         image: require("./assets/images/pomodoro-clock.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/pomodoro-clock",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."
@@ -113,6 +119,7 @@ const projectInfo = [
         title: "Tic Tac Toe",
         image: require("./assets/images/tictactoe.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/tictactoe",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."
@@ -121,6 +128,7 @@ const projectInfo = [
         title: "Simon Game",
         image: require("./assets/images/simon-game.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
+        link: "/simon-game",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
             "like by clicking a button."

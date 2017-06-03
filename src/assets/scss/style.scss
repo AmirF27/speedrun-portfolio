@@ -15,26 +15,35 @@
     width: 46%;
 }
 
-.panel-body {
-    color: $white;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s linear;
+.panel {
+    text-align: center;
 
-    img {
-        transition: all 0.3s linear;
+    .panel-title {
+        color: $color-text-primary;
+        font-size: 1.5em;
     }
 
-    .panel-info {
-        background: rgba(0, 0, 0, 0.8);
-        box-sizing: border-box;
-        height: 0;
-        margin: 0;
-        padding: 20px;
-        position: absolute;
-        top: 0;
+    .panel-body {
+        color: $white;
+        overflow: hidden;
+        position: relative;
         transition: all 0.3s linear;
-        visibility: hidden;
+
+        img {
+            transition: all 0.3s linear;
+        }
+
+        .panel-info {
+            background: rgba(0, 0, 0, 0.8);
+            box-sizing: border-box;
+            height: 0;
+            margin: 0;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s linear;
+            visibility: hidden;
+        }
     }
 }
 
