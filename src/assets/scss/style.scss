@@ -8,11 +8,44 @@
 @import "./pomodoro-clock/style.scss";
 @import "./tictactoe/style.scss";
 
-.col-half {
+/*
+** GRID STYLES
+*/
+
+.col-wrap {
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @extend %clearfix;
+}
+
+.col {
     box-sizing: border-box;
-    display: inline-block;
-    margin: 20px 2%;
-    width: 46%;
+    float: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col-d-1-2 {
+    width: 50%;
+}
+
+.col-d-1-3 {
+    width: 33.333%;
+}
+
+.col-d-2-3 {
+    width: 66.666%;
+}
+
+
+
+.page-section {
+    h2 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 }
 
 .panel {
