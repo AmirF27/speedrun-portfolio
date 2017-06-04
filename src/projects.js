@@ -93,45 +93,44 @@ const projectInfo = [
         image: require("./assets/images/twitch-client.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/twitch-client",
-        desciption: "An app that fetches and displays a random quote from a " +
-            "third party API. It also allows the user to tweet a quote they " +
-            "like by clicking a button."
+        desciption: "A simple app that checks whether a user is currently " +
+            "streaming on Twitch.tv. Users can choose to display all Twitch.tv " +
+            "users, the ones who are currently streaming, or the ones who are " +
+            "not."
     },
     {
         title: "Calculator",
         image: require("./assets/images/calculator.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/calculator",
-        desciption: "An app that fetches and displays a random quote from a " +
-            "third party API. It also allows the user to tweet a quote they " +
-            "like by clicking a button."
+        desciption: "A very simplistic but accurate calculator written in " +
+            "JavaScript."
     },
     {
         title: "Pomodoro Clock",
         image: require("./assets/images/pomodoro-clock.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/pomodoro-clock",
-        desciption: "An app that fetches and displays a random quote from a " +
-            "third party API. It also allows the user to tweet a quote they " +
-            "like by clicking a button."
+        desciption: "The Pomodoro technique is a time management method where " +
+            "one works for 25 minutes and takes a 5 minute break in repeated " +
+            "cycles. This is a web implementation of the technique, with the " +
+            "added ability of changing work session and break times."
     },
     {
         title: "Tic Tac Toe",
         image: require("./assets/images/tictactoe.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/tictactoe",
-        desciption: "An app that fetches and displays a random quote from a " +
-            "third party API. It also allows the user to tweet a quote they " +
-            "like by clicking a button."
+        desciption: "Simple Tic Tac Toe game against the computer."
     },
     {
         title: "Simon Game",
         image: require("./assets/images/simon-game.png"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/simon-game",
-        desciption: "An app that fetches and displays a random quote from a " +
-            "third party API. It also allows the user to tweet a quote they " +
-            "like by clicking a button."
+        desciption: "A web-based version of the classic 1980s memory game Simon. " +
+            "Players are given a random pattern of colors that they have to " +
+            "remember and repeat, and on each round a new color is added."
     }
 ];
 
