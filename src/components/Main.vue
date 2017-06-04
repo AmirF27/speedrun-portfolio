@@ -1,10 +1,18 @@
 <template>
     <div class="main-page">
-        <header>
-            <div class="container"></div>
+        <header class="fixed-top">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="container">
-            <section class="page-section">
+            <section id="aboutMe" class="page-section">
                 <h2 class="center-text">About Me</h2>
                 <div class="col-wrap">
                     <div class="col col-d-1-3 col-t-1-2">
@@ -19,7 +27,7 @@
                     </div>
                 </div>
             </section>
-            <section class="page-section">
+            <section id="projects" class="page-section">
                 <h2 class="center-text">Projects</h2>
                 <div class="col-wrap">
                     <template v-for="project in projects">
