@@ -4,9 +4,9 @@
             <div class="container">
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a class="active" href="#about">About Me</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +54,7 @@
                     <input id="email" class="text-field" type="email" name="email">
                     <label for="message">Message</label>
                     <textarea id="message" class="text-field" name="message" rows="8"></textarea>
-                    <input class="btn btn--default" type="submit" value="Send Message">
+                    <input class="btn btn--primary" type="submit" value="Send Message">
                 </form>
             </section>
         </main>
