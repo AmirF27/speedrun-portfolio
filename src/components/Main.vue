@@ -12,7 +12,7 @@
             </div>
         </header>
         <main class="container">
-            <section id="aboutMe" class="page-section">
+            <section id="about" class="page-section">
                 <h2 class="center-text">About Me</h2>
                 <div class="col-wrap">
                     <div class="col col-d-1-3 col-t-1-2">
@@ -26,7 +26,7 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </section><!-- /#about -->
             <section id="projects" class="page-section">
                 <h2 class="center-text">Projects</h2>
                 <div class="col-wrap">
@@ -44,6 +44,18 @@
                         </div>
                     </template>
                 </div>
+            </section><!-- /#projects -->
+            <section id="contact" class="page-section">
+                <h2 class="center-text">Contact Me</h2>
+                <form class="contact-form" action="https://formspree.io/amir.f.aldeen@gmail.com" method="post">
+                    <label for="name">Name</label>
+                    <input id="name" class="text-field" type="text" name="name">
+                    <label for="email">Email</label>
+                    <input id="email" class="text-field" type="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="text-field" name="message" rows="8"></textarea>
+                    <input class="btn btn--default" type="submit" value="Send Message">
+                </form>
             </section>
         </main>
         <footer>

@@ -131,6 +131,27 @@
     }
 }
 
+.contact-form {
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
+
+    .text-field {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="submit"], .text-field {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 footer ul {
     list-style: none;
 
