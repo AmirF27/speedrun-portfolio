@@ -84,8 +84,38 @@ import { projectInfo } from "../projects";
 export default {
     data() {
         return {
-            projects: projectInfo
+            projects: projectInfo,
+            pageSections: [],
+            currentSection: ""
         };
+    },
+    methods: {
+        handleScroll() {
+            for (let section of this.pageSections) {
+                if (this.inView(section)) {
+                    this.currentSection = section.id;
+                    this.setActive(this.currentSection);
+                }
+            }
+        },
+        inView(section) {
+            return (
+                section.id != this.currentSection &&
+                window.pageYOffset >= section.offsetTop - 200);
+        },
+        setActive(id) {
+            document.querySelector(".active").classList.remove("active");
+            document.querySelector(`a[href='#${id}']`).classList.add("active");
+        }
+    },
+    created() {
+        this.pageSections = document.getElementsByClassName("page-section");
+        this.currentSection = this.pageSections[0];
+
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
     }
 };
 </script>
