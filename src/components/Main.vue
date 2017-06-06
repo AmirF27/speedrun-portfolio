@@ -15,10 +15,10 @@
             <section id="about" class="page-section">
                 <h2 class="center-text">About Me</h2>
                 <div class="col-wrap">
-                    <div class="col col-d-1-3 col-t-1-2">
-                        <img class="responsive-img" src="../assets/images/me.jpg" alt="A photo of me.">
+                    <div class="col col-m-1 col-t-1-3 col-d-1-4 portrait">
+                        <img src="../assets/images/me.jpg" alt="A photo of me.">
                     </div>
-                    <div class="col col-d-2-3 col-t-1-2">
+                    <div class="col col-m-1 col-t-2-3 col-d-3-4">
                         <p>
                             Hi! My name is Amir. I'm a web developer from Israel, looking for a full time
                             developer position. I've always loved coding, so I enjoy building stuff and
@@ -114,7 +114,7 @@ export default {
             );
 
             this.$pageRoot.animate({
-                scrollTop: target.offsetTop - 80
+                scrollTop: target.offsetTop - 100
             }, 700);
         },
         findTarget(target) {
