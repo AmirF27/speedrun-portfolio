@@ -4,9 +4,9 @@
             <div class="container">
                 <nav class="main-nav">
                     <ul>
-                        <li><a class="active" href="#about">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a @click.prevent="smoothScroll" class="active" href="#about">About Me</a></li>
+                        <li><a @click.prevent="smoothScroll" href="#projects">Projects</a></li>
+                        <li><a @click.prevent="smoothScroll" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -86,7 +86,8 @@ export default {
         return {
             projects: projectInfo,
             pageSections: [],
-            currentSection: ""
+            currentSection: "",
+            $pageRoot: {}
         };
     },
     methods: {
@@ -106,11 +107,28 @@ export default {
         setActive(id) {
             document.querySelector(".active").classList.remove("active");
             document.querySelector(`a[href='#${id}']`).classList.add("active");
+        },
+        smoothScroll($event) {
+            var target = this.findTarget(
+                $event.target.getAttribute("href").replace("#", "")
+            );
+
+            this.$pageRoot.animate({
+                scrollTop: target.offsetTop - 80
+            }, 700);
+        },
+        findTarget(target) {
+            for (let section of this.pageSections) {
+                if (section.id == target) {
+                    return section;
+                }
+            }
         }
     },
     created() {
         this.pageSections = document.getElementsByClassName("page-section");
         this.currentSection = this.pageSections[0];
+        this.$pageRoot = $("html, body");
 
         window.addEventListener("scroll", this.handleScroll);
     },
