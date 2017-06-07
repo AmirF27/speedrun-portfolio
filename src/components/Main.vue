@@ -30,14 +30,18 @@
             <section id="projects" class="page-section">
                 <h2 class="center-text">Projects</h2>
                 <div class="col-wrap">
-                    <template v-for="project in projects">
+                    <template v-for="project, i in projects">
                         <div class="col col-d-1-2">
                             <router-link :to="project.link">
                                 <section class="panel">
                                     <h3 class="panel-title">{{ project.title }}</h3>
                                     <div class="panel-body">
                                         <img :src="project.image" :alt="project.title" class="responsive-img">
-                                        <p class="panel-info">{{ project.desciption }}</p>
+                                        <p :id="'info' + i" class="panel-info">{{ project.desciption }}</p>
+                                        <div @click.prevent="toggleInfo" class="info-toggle" :data-toggle="'info' + i">
+                                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                            Show Description
+                                        </div>
                                     </div><!-- /.panel-body -->
                                 </section><!-- /.panel -->
                             </router-link>
@@ -123,6 +127,22 @@ export default {
                     return section;
                 }
             }
+        },
+        toggleInfo($event) {
+            var toggleText = $event.target.innerHTML;
+
+            if (~toggleText.indexOf("Show")) {
+                $event.target.innerHTML = toggleText.replace("Show", "Hide");
+            }
+            else {
+                $event.target.innerHTML = toggleText.replace("Hide", "Show");
+            }
+
+            $event.target.childNodes[0].classList.toggle("fa-arrow-down");
+            $event.target.childNodes[0].classList.toggle("fa-arrow-up");
+
+            document.getElementById($event.target.getAttribute("data-toggle"))
+            .classList.toggle("expanded");
         }
     },
     created() {
