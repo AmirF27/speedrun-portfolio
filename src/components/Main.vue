@@ -31,7 +31,7 @@
                 <h2 class="center-text">Projects</h2>
                 <div class="col-wrap">
                     <template v-for="project, i in projects">
-                        <div class="col col-d-1-2">
+                        <div class="col col-m-1 col-t-1 col-d-1-2">
                             <router-link :to="project.link">
                                 <section class="panel">
                                     <h3 class="panel-title">{{ project.title }}</h3>
@@ -63,18 +63,13 @@
             </section>
         </main>
         <footer>
-            <div class="container">
-                <ul>
-                    <li>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        amir.f.aldeen@gmail.com
-                    </li>
-                    <li>
-                        <a href="https://github.com/AmirF27" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i> AmirF27
-                        </a>
-                    </li>
-                </ul>
+            <div class="container center-text">
+                <p class="left copyright">&copy; 2017 Amir F.</p>
+                <p class="right">
+                    <a href="https://github.com/AmirF27" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i> AmirF27
+                    </a>
+                </p>
             </div>
         </footer>
     </div>

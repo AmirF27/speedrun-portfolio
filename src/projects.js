@@ -63,7 +63,7 @@ const projects = {
 const projectInfo = [
     {
         title: "Random Quote Machine",
-        image: require("./assets/images/random-quote-machine.png"),
+        image: require("./assets/images/random-quote-machine.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/quote-machine",
         desciption: "An app that fetches and displays a random quote from a " +
@@ -72,7 +72,7 @@ const projectInfo = [
     },
     {
         title: "Local Weather",
-        image: require("./assets/images/local-weather.png"),
+        image: require("./assets/images/local-weather.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/local-weather",
         desciption: "This simple application figures out the user's current " +
@@ -82,7 +82,7 @@ const projectInfo = [
     },
     {
         title: "Wikipedia Viewer",
-        image: require("./assets/images/wikipedia-viewer.png"),
+        image: require("./assets/images/wikipedia-viewer.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/wikipedia-viewer",
         desciption: "This app allows users to search Wikipedia for articles, " +
@@ -90,7 +90,7 @@ const projectInfo = [
     },
     {
         title: "Twitch.tv Client",
-        image: require("./assets/images/twitch-client.png"),
+        image: require("./assets/images/twitch-client.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/twitch-client",
         desciption: "A simple app that checks whether a user is currently " +
@@ -100,7 +100,7 @@ const projectInfo = [
     },
     {
         title: "Calculator",
-        image: require("./assets/images/calculator.png"),
+        image: require("./assets/images/calculator.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/calculator",
         desciption: "A very simplistic but accurate calculator written in " +
@@ -108,7 +108,7 @@ const projectInfo = [
     },
     {
         title: "Pomodoro Clock",
-        image: require("./assets/images/pomodoro-clock.png"),
+        image: require("./assets/images/pomodoro-clock.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/pomodoro-clock",
         desciption: "The Pomodoro technique is a time management method where " +
@@ -118,14 +118,14 @@ const projectInfo = [
     },
     {
         title: "Tic Tac Toe",
-        image: require("./assets/images/tictactoe.png"),
+        image: require("./assets/images/tictactoe.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/tictactoe",
         desciption: "Simple Tic Tac Toe game against the computer."
     },
     {
         title: "Simon Game",
-        image: require("./assets/images/simon-game.png"),
+        image: require("./assets/images/simon-game.jpg"),
         skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/simon-game",
         desciption: "A web-based version of the classic 1980s memory game Simon. " +
