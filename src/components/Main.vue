@@ -31,6 +31,16 @@
                             developer position. I've always loved coding, so I enjoy building stuff and
                             learning new things all the time.
                         </p>
+                        <p>
+                            I'm mostly self-taught, but I have a Practical Software Engineering certificate,
+                            a 2 year program that focuses on the practical side of the degree counterpart.
+                            To me, this certificate was only the beginning, and it served as an introduction
+                            to coding for me and made me fall in love with it.
+                        </p>
+                        <p>
+                            Currently, I'm working on improving my skills by reading books, taking online
+                            courses, and building more and more projects.
+                        </p>
                     </div>
                 </div>
             </section><!-- /#about -->

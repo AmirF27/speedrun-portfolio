@@ -10,7 +10,7 @@
 
 /*
 ** GRID STYLES
-*/
+**/
 
 .col-wrap {
     margin-left: -20px;
@@ -43,6 +43,10 @@
     margin-top: 100px;
 }
 
+/*
+** NAVBAR STYLES
+**/
+
 .main-nav {
     display: none;
     font-size: 1.1rem;
@@ -56,7 +60,7 @@
         @extend %clearfix;
 
         li {
-            margin-right: 30px;
+            margin-right: 0;
             text-align: center;
 
             a {
@@ -88,7 +92,7 @@
         cursor: pointer;
         float: right;
         outline: none;
-        width: 40px;
+        width: 45px;
 
         // following three lines used to vertically align the hamburger
         // http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
@@ -103,7 +107,7 @@
             width: 100%;
 
             & + .bar {
-                margin-top: 6px;
+                margin-top: 8px;
             }
         }
     }
@@ -120,6 +124,7 @@
 
         ul li {
             float: left;
+            margin-right: 25px;
         }
     }
 }
