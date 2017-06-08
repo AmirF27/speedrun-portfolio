@@ -2,6 +2,13 @@
     <div class="main-page">
         <header class="fixed-top">
             <div class="container">
+                <div class="nav-toggle">
+                    <button @click="toggleNav" type="button" class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a @click.prevent="smoothScroll" class="active" href="#about">About Me</a></li>
@@ -29,6 +36,15 @@
             </section><!-- /#about -->
             <section id="projects" class="page-section">
                 <h2 class="center-text">Projects</h2>
+                <div class="section-description">
+                    <p class="center-text">
+                        Check out some of my most recent projects.
+                    </p>
+                    <p class="center-text">
+                        All projects listed below were built using HTML, CSS, JavaScript, Vue.js
+                        and a little bit of jQuery.
+                    </p>
+                </div>
                 <div class="col-wrap">
                     <template v-for="project, i in projects">
                         <div class="col col-m-1 col-t-1 col-d-1-2">
@@ -51,6 +67,11 @@
             </section><!-- /#projects -->
             <section id="contact" class="page-section">
                 <h2 class="center-text">Contact Me</h2>
+                <div class="section-description">
+                    <p class="center-text">
+                        Feel free to contact me using the form below.
+                    </p>
+                </div>
                 <form class="contact-form" action="https://formspree.io/amir.f.aldeen@gmail.com" method="post">
                     <label for="name">Name</label>
                     <input id="name" class="text-field" type="text" name="name">
@@ -64,12 +85,12 @@
         </main>
         <footer>
             <div class="container center-text">
-                <p class="left copyright">&copy; 2017 Amir F.</p>
                 <p class="right">
                     <a href="https://github.com/AmirF27" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i> AmirF27
                     </a>
                 </p>
+                <p class="left copyright">&copy; 2017 Amir F.</p>
             </div>
         </footer>
     </div>
@@ -86,7 +107,8 @@ export default {
             projects: projectInfo,
             pageSections: [],
             currentSection: "",
-            $pageRoot: {}
+            $pageRoot: {},
+            $navbar: {}
         };
     },
     methods: {
@@ -115,6 +137,10 @@ export default {
             this.$pageRoot.animate({
                 scrollTop: target.offsetTop - 100
             }, 700);
+
+            if ($(".nav-toggle").is(":visible")) {
+                this.$navbar.slideUp("fast");
+            }
         },
         findTarget(target) {
             for (let section of this.pageSections) {
@@ -138,14 +164,20 @@ export default {
 
             document.getElementById($event.target.getAttribute("data-toggle"))
             .classList.toggle("expanded");
+        },
+        toggleNav() {
+            this.$navbar.slideToggle("fast");
         }
     },
     created() {
         this.pageSections = document.getElementsByClassName("page-section");
         this.currentSection = this.pageSections[0];
-        this.$pageRoot = $("html, body");
 
         window.addEventListener("scroll", this.handleScroll);
+    },
+    mounted() {
+        this.$pageRoot = $("html, body");
+        this.$navbar = $(".main-nav");
     },
     destroyed() {
         window.removeEventListener("scroll", this.handleScroll);

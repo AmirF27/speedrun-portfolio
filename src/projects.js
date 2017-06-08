@@ -64,7 +64,6 @@ const projectInfo = [
     {
         title: "Random Quote Machine",
         image: require("./assets/images/random-quote-machine.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/quote-machine",
         desciption: "An app that fetches and displays a random quote from a " +
             "third party API. It also allows the user to tweet a quote they " +
@@ -73,9 +72,8 @@ const projectInfo = [
     {
         title: "Local Weather",
         image: require("./assets/images/local-weather.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/local-weather",
-        desciption: "This simple application figures out the user's current " +
+        desciption: "This application figures out the user's current " +
             "location and displays the current weather in that location. " +
             "Users are also able to toggle the temperature scale between " +
             "Celcius and Fahrenheit."
@@ -83,7 +81,6 @@ const projectInfo = [
     {
         title: "Wikipedia Viewer",
         image: require("./assets/images/wikipedia-viewer.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/wikipedia-viewer",
         desciption: "This app allows users to search Wikipedia for articles, " +
             "as well as view a random article."
@@ -91,9 +88,8 @@ const projectInfo = [
     {
         title: "Twitch.tv Client",
         image: require("./assets/images/twitch-client.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/twitch-client",
-        desciption: "A simple app that checks whether a user is currently " +
+        desciption: "An app that checks whether a user is currently " +
             "streaming on Twitch.tv. Users can choose to display all Twitch.tv " +
             "users, the ones who are currently streaming, or the ones who are " +
             "not."
@@ -101,15 +97,13 @@ const projectInfo = [
     {
         title: "Calculator",
         image: require("./assets/images/calculator.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/calculator",
-        desciption: "A very simplistic but accurate calculator written in " +
+        desciption: "A simple but accurate calculator written in " +
             "JavaScript."
     },
     {
         title: "Pomodoro Clock",
         image: require("./assets/images/pomodoro-clock.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/pomodoro-clock",
         desciption: "The Pomodoro technique is a time management method where " +
             "one works for 25 minutes and takes a 5 minute break in repeated " +
@@ -119,18 +113,17 @@ const projectInfo = [
     {
         title: "Tic Tac Toe",
         image: require("./assets/images/tictactoe.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/tictactoe",
-        desciption: "Simple Tic Tac Toe game against the computer."
+        desciption: "Play a Tic Tac Toe game against the computer."
     },
     {
         title: "Simon Game",
         image: require("./assets/images/simon-game.jpg"),
-        skills: ["HTML", "CSS", "JavaScript", "Vue.js"],
         link: "/simon-game",
         desciption: "A web-based version of the classic 1980s memory game Simon. " +
             "Players are given a random pattern of colors that they have to " +
-            "remember and repeat, and on each round a new color is added."
+            "remember and repeat, and on each round a new color is added to the " +
+            "pattern."
     }
 ];
 

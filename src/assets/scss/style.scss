@@ -44,7 +44,9 @@
 }
 
 .main-nav {
+    display: none;
     font-size: 1.1rem;
+    padding-bottom: 10px;
 
     ul {
         list-style: none;
@@ -54,8 +56,8 @@
         @extend %clearfix;
 
         li {
-            float: left;
             margin-right: 30px;
+            text-align: center;
 
             a {
                 color: $white;
@@ -76,11 +78,62 @@
     }
 }
 
+.nav-toggle {
+    display: block;
+    height: 58px;
+
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        float: right;
+        outline: none;
+        width: 40px;
+
+        // following three lines used to vertically align the hamburger
+        // http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .bar {
+            background: $white;
+            display: block;
+            height: 2px;
+            width: 100%;
+
+            & + .bar {
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .main-nav {
+        display: block !important;
+        padding-bottom: 0;
+
+        ul li {
+            float: left;
+        }
+    }
+}
+
 .page-section {
+    margin-top: 80px;
+
     h2 {
         color: $color-title;
-        margin-bottom: 50px;
-        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .section-description {
+        margin-bottom: 30px;
     }
 }
 
